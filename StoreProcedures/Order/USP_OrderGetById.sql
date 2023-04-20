@@ -1,0 +1,22 @@
+USE [Donne]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+
+CREATE PROCEDURE [dbo].[USP_OrderGetById] (@OrderId INT)
+AS
+BEGIN
+	SELECT TOP 1 * 
+		FROM [dbo].[Order]
+			WHERE OrderId = @OrderId;
+	SET NOCOUNT ON;
+END
+GO
+
+
