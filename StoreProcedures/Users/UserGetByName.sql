@@ -1,0 +1,19 @@
+USE [Donne]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[USP_UserGetByName] (@UserName VARCHAR(50))
+AS
+BEGIN
+	SELECT TOP 1 * FROM Users
+		WHERE UserName = @UserName;
+	SET NOCOUNT ON;
+END
+GO
+
+

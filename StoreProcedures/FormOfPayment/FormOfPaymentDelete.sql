@@ -1,0 +1,19 @@
+USE [Donne]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[USP_FormOfPaymentDelete] (@FormOfPaymentId INT)
+AS
+BEGIN
+	DELETE FROM FormOfPayment
+		WHERE FormOfPaymentId = @FormOfPaymentId
+	SET NOCOUNT ON;
+END
+GO
+
+

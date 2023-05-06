@@ -1,0 +1,19 @@
+USE [Donne]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[USP_BuyerDelete] (@BuyerId INT)
+AS
+BEGIN
+	DELETE FROM Buyer
+		WHERE BuyerId = @BuyerId
+	SET NOCOUNT ON;
+END
+GO
+
+

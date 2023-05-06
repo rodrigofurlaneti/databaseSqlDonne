@@ -1,0 +1,20 @@
+USE [Donne]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[USP_FormOfPaymentGetAll] 
+AS
+BEGIN
+	SET NOCOUNT ON;
+	SELECT * 
+		FROM FormOfPayment
+			ORDER BY FormOfPaymentId ASC;
+END
+GO
+
+

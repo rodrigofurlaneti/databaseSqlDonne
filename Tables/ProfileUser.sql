@@ -10,6 +10,8 @@ GO
 CREATE TABLE [dbo].[ProfileUser](
 	[ProfileId] [int] IDENTITY(1,1) NOT NULL,
 	[ProfileName] [varchar](50) NULL,
+	[StoreId] [int] NULL,
+	[StoreName] [varchar](150) NULL	
  CONSTRAINT [PK_ProfileUser] PRIMARY KEY CLUSTERED 
 (
 	[ProfileId] ASC

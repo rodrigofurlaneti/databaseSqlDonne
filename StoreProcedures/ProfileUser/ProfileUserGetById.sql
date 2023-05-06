@@ -1,0 +1,19 @@
+USE [Donne]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[USP_ProfileUserGetById] (@ProfileId INT)
+AS
+BEGIN
+	SELECT TOP 1 * FROM ProfileUser
+		WHERE ProfileId = @ProfileId;
+	SET NOCOUNT ON;
+END
+GO
+
+
