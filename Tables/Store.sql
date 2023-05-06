@@ -1,7 +1,6 @@
 USE [Donne]
 GO
 
-/****** Object:  Table [dbo].[Store]    Script Date: 20/04/2023 07:01:50 ******/
 SET ANSI_NULLS ON
 GO
 

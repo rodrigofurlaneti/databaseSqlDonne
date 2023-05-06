@@ -7,14 +7,16 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE TABLE [dbo].[Category](
-	[CategoryId] [int] IDENTITY(1,1) NOT NULL,
-	[CategoryName] [varchar](150) NULL,
+CREATE TABLE [dbo].[Buyer](
+	[BuyerId] [int] IDENTITY(1,1) NOT NULL,
+	[BuyerName] [varchar](50) NULL,
+	[BuyerPhone] [varchar](50) NULL,
+	[BuyerAddress] [varchar](100) NULL,
 	[StoreId] [int] NULL,
-	[StoreName] [varchar](150) NULL,
- CONSTRAINT [PK_Category] PRIMARY KEY CLUSTERED 
+	[StoreName] [varchar](50) NULL,
+ CONSTRAINT [PK_Buyer] PRIMARY KEY CLUSTERED 
 (
-	[CategoryId] ASC
+	[BuyerId] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO

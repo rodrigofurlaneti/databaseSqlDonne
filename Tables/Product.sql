@@ -1,7 +1,6 @@
 USE [Donne]
 GO
 
-/****** Object:  Table [dbo].[Product]    Script Date: 20/04/2023 07:01:05 ******/
 SET ANSI_NULLS ON
 GO
 
@@ -13,12 +12,12 @@ CREATE TABLE [dbo].[Product](
 	[ProductName] [varchar](150) NULL,
 	[CategoryId] [int] NULL,
 	[CategoryName] [varchar](150) NULL,
-	[CostPrice] [money] NULL,
-	[SalePrice] [money] NULL,
+	[CostPrice] [varchar](50) NULL,
+	[SalePrice] [varchar](50) NULL,
 	[QuantityStock] [int] NULL,
 	[MinimumStockQuantity] [int] NULL,
-	[TotalValueCostOfInventory] [money] NULL,
-	[TotalValueSaleStock] [money] NULL,
+	[TotalValueCostOfInventory] [varchar](50) NULL,
+	[TotalValueSaleStock] [varchar](50) NULL,
 	[DateInsert] [datetime] NULL,
 	[DateUpdate] [datetime] NULL,
 	[NeedToPrint] [bit] NULL,
